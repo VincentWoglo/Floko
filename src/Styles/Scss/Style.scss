@@ -1,0 +1,17 @@
+@use "Colors";
+@use "Fonts";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: Colors.$BackgroundColor;
+    font-size: Fonts.$FontsSize__16px;
+    font-family: Fonts.$FontsFamily__Manrope;
+}
+main{
+    width: 100%;
+}

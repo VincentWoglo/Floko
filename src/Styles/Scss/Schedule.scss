@@ -1,0 +1,222 @@
+@use "Colors";
+@use "Fonts";
+
+.ScheduleSection{
+    margin: 146px;
+    .Container{
+        max-width: 1157px;
+        color: Colors.$White;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        .SchdeuleTitleWrapper{
+            width: 331px;
+            .ScheduleTitle{
+                font-size: Fonts.$FontsSize__72px;
+                font-weight: Fonts.$FontWeight__Bold;
+                line-height: 76px;
+            }
+            .ScheduleDescription{
+                line-height: 26px;
+                margin-top: 20px;
+            }
+            .DownloadScheduleBtn{
+                padding: 20px 40px;
+                text-transform: uppercase;
+                border-radius: 130px;
+                border: 1px Colors.$ButtonStrokeColor solid;
+                font-weight: Fonts.$FontWeight__SemiBold;
+                background-color: Colors.$GreyBlack;
+                color: Colors.$White;
+                margin-top: 34px;
+                cursor: pointer;
+            }
+        }
+        .SchedulesWrapper{
+            width: 670px;
+            margin-left: 169px;
+            .ScheduleRoadmapTitle{
+                display: flex;
+                justify-content: space-between;
+                max-width: 570px;
+                .DayOne, .DayTwo, .DayThree{
+                    border-bottom: 1px Colors.$White solid;
+                }
+            }
+            .ScheduleTimeline{
+                margin-top: 43px;
+                .RegistrationAndCoffee, .PlanAndConductUserResearch, .QAndAForSpeaker,
+                .LaunchBreak, .ResearchForTheRightThing{
+                    display: flex;
+                    justify-content: space-between;
+                    .Circle{
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 100%;
+                        border: 3px Colors.$Yellow solid;
+                        position: relative;
+                        
+                        &:before{
+                            content: '';
+                            height: 108px;
+                            border: 2px Colors.$Yellow solid;
+                            background-color: Colors.$Yellow;
+                            position: absolute;
+                            left: 5px;
+                            margin-top: 20px;
+                        }
+                    }
+                    .AppointmentInfo{
+                        .AppointmentInfoTitle{
+                            font-size: Fonts.$FontsSize__18px;
+                            font-weight: Fonts.$FontWeight__Bold;
+                        }
+                        .AppointmentInfoDescription{
+                            line-height: 24px;
+                            font-size: Fonts.$FontsSize__14px;
+                            width: 443px;
+                            margin-top: 14px;
+                        }
+                    }
+                }
+                .PlanAndConductUserResearch{
+                    margin-top: 45px;
+                }
+                .QAndAForSpeaker{
+                    margin-top: 23px;
+                }
+                .LaunchBreak{
+                    margin-top: 45px;
+                    .Circle{
+                        &:before{
+                            height: 50px;
+                        }
+                        // &:after{
+                        //     position: absolute;
+                        //     content: '';
+                        //     height: 50px;
+                        //     border: 2px Colors.$Yellow solid;
+                        //     background-color: Colors.$Yellow;
+                        //     margin-top: 19px;
+                        //     left: 30%;
+                        // }
+                    }
+                }
+                .ResearchForTheRightThing{
+                    margin-top: 38px;
+                    .Circle{
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Media query
+
+@media only screen and (max-width: 1420px){
+    .ScheduleSection{
+        .Container{
+            .SchedulesWrapper{
+                width: 770px;
+                margin-left: 120px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    .ScheduleSection{
+        .Container{
+            .SchedulesWrapper{
+                width: 770px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .ScheduleSection{
+        .Container{
+            .SchedulesWrapper{
+                width: 800px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1278px){
+    .ScheduleSection{
+        .Container{
+            display: flex;
+            flex-direction: column;
+            .SchdeuleTitleWrapper{
+                margin: auto;
+                width: 483px;
+                text-align: center;
+            }
+            .SchedulesWrapper{
+                width: 700px;
+                margin-left: 0px;
+                margin-top: 56px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ScheduleSection{
+        width: 90%;
+        margin: auto;
+        .Container{
+            .SchdeuleTitleWrapper{
+                .ScheduleTitle{
+                font-size: Fonts.$FontsSize__52px;
+                }
+            }
+            .SchedulesWrapper{
+                .ScheduleTimeline{
+                    .RegistrationAndCoffee, .PlanAndConductUserResearch, .QAndAForSpeaker,
+                    .LaunchBreak, .ResearchForTheRightThing{
+                        .AppointmentInfo{
+                            .AppointmentInfoTitle{
+                                font-size: Fonts.$FontsSize__18px;
+                                font-weight: Fonts.$FontWeight__Bold;
+                            }
+                            .AppointmentInfoDescription{
+                                line-height: 24px;
+                                font-size: Fonts.$FontsSize__14px;
+                                width: 59.222vw;                                ;
+                                margin-top: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .ScheduleSection{
+        .Container{
+            display: flex;
+            flex-direction: column;
+            .SchdeuleTitleWrapper{
+                margin: auto;
+                width: 483px;
+                text-align: center;
+            }
+            .SchedulesWrapper{
+                width: 620px;
+                margin-left: 0px;
+                margin-top: 56px;
+            }
+        }
+    }
+}

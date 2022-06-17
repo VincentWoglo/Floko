@@ -1,0 +1,107 @@
+@use "Colors";
+@use "Fonts";
+
+.FooterSection{
+    margin-top: 150px;
+    .Container{
+        width: 1157px;
+        margin: auto;
+        .Wrapper{
+            display: flex;
+            align-items: initial;
+            color: Colors.$White;
+            justify-content: space-between;
+            .FooterLogoWrapper{
+                .TextLogo{
+                    margin-left: 7.65px;
+                }
+            }
+            .FooterSiteMapWrapper{
+                display: flex;
+                justify-content: space-between;
+                width: 770px;
+                .FooterNavigateWrapper, .FooterSpeakerWrapper, .FooterNewsletterWrapper{
+                    .SectionTitle{
+                        line-height: 18px;
+                        font-size: Fonts.$FontsSize__18px;
+                        font-weight: Fonts.$FontWeight__SemiBold;
+                    }
+                    .UnorderedSitemap{
+                        list-style-type: none;
+                        margin-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: Colors.$NavMenuListColor;
+                        line-height: 16px;
+                    }
+                }
+                .FooterNewsletterWrapper{
+                    .FooterNewsletterDescription{
+                        width: 369px;
+                        color: Colors.$NavMenuListColor;
+                        margin-top: 24px;
+                        line-height: 26px;
+                    }
+                    .FooterNewsletterInputs{
+                        margin-top: 28px;
+                        .YourName, .EmailAddress{
+                            padding: 6px 0;
+                            width: 369px;
+                            border: 0 solid;
+                            border-bottom: 1px Colors.$NavMenuListColor solid;
+                            background-color: transparent;
+                        }
+                        .EmailAddress{
+                            margin-top: 18px;
+                        }
+                        .NewsletterSubscribeBtn{
+                            padding: 14px 140.5px;
+                            border: 1px red solid;
+                            text-transform: uppercase;
+                            font-weight: Fonts.$FontWeight__Bold;
+                            line-height: 16px;
+                            border-radius: 130px;
+                            margin-top: 24px;
+                            border: 1px Colors.$ButtonStrokeColor solid;
+                            background-color: #333;
+                            color: Colors.$White;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1174px){
+    .FooterSection{
+        margin-top: 150px;
+        .Container{
+            width: 1042px;
+            margin: auto;
+        }
+    }
+}
+@media only screen and (max-width: 1060px){
+    .FooterSection{
+        margin-top: 150px;
+        .Container{
+            width: 100%;
+            margin: auto;
+            .Wrapper{
+                flex-wrap: wrap;
+                .FooterLogoWrapper{
+                    width: 90%;
+                    margin: auto;
+                }
+                .FooterSiteMapWrapper{
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

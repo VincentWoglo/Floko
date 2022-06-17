@@ -1,0 +1,113 @@
+@use "Colors";
+@use "Fonts";
+
+.PricingTicketsSection{
+    //border: 1px red solid;
+    .Container{
+        max-width: 1157px;
+        margin: auto;
+        color: Colors.$White;
+        .PricingTicketsTitle{
+            font-size: Fonts.$FontsSize__72px;
+            font-weight: Fonts.$FontWeight__Bold;
+            text-align: center;
+        }
+        .PricingOptionsWrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 38px;
+            .PricingCardOne, .PricingCardTwo, .PricingCardThree{
+                width: 370px;
+                border: 2px Colors.$Black__3 solid;
+                border-radius: 18px;
+                .PricingCardTitleWrapper{
+                    padding: 26px 36px;
+                    background-color: Colors.$BackgroundColor;
+                    border-top-left-radius: 18px;
+                    border-top-right-radius: 18px;
+                    .PricingCardTitle{
+                        font-size: Fonts.$FontsSize__36px;
+                        font-weight: Fonts.$FontWeight__Bold;
+                        line-height: 36px;
+                    }
+                    .PricingPerMember{
+                        line-height: 26px;
+                        margin-top: 7px;
+                    }
+                }
+                .GreenPricingCardTitleWrapper{
+                    background-color: Colors.$Green;
+                }
+                .RedPricingCardTitleWrapper{
+                    background-color: Colors.$Red;
+                }
+                .CardFeaturesWrapper{
+                    background-color: Colors.$Black__3;
+                    backdrop-filter: blur(20px);
+                    width: 100%;
+                    .CardFeature{
+                        padding: 74px 38px 37px 38px;
+                        .FeatureWrapper{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 22px;
+                            .Feature{
+                                margin-left: 18px;
+                            }
+                        }
+                        .CardOneBtn{
+                            width: 302px;
+                            text-align: center;
+                            border: 1px Colors.$ButtonStrokeColor solid;
+                            cursor: pointer;
+                            margin: auto;
+                            margin-top: 52px;
+                            padding: 12px 40px;
+                            border-radius: 54px;
+                            background-color: Colors.$BackgroundColor;
+                            color: Colors.$White;
+                            font-weight: Fonts.$FontWeight__SemiBold;
+                            text-transform: uppercase;
+                        }
+                        .BlueCardBtn{
+                            background-color: Colors.$Blue;
+                            border: 1px Colors.$Blue solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1174px){
+    .PricingTicketsSection{
+        //border: 1px red solid;
+        .Container{
+            max-width: 900px;
+            margin: auto;
+            color: Colors.$White;
+            .PricingOptionsWrapper{
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                row-gap: 51px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    .PricingTicketsSection{
+        .Container{
+            .PricingTicketsTitle{
+                font-size: Fonts.$FontsSize__52px;
+            }
+            .PricingOptionsWrapper{
+                flex-direction: column;
+                .PricingCardOne, .PricingCardTwo, .PricingCardThree{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

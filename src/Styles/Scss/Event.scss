@@ -1,0 +1,189 @@
+@use "Colors";
+@use "Fonts";
+
+.EventsSection{
+    margin-top: 150px;
+    .Container{
+        color: Colors.$White;
+        width: 1157px;
+        margin: auto;
+        display: flex;
+        .EventDescriptionWrapper{
+            max-width: 499px;
+            display: flex;
+            flex-direction: column;
+            .Wrapper{
+                .EventTitle{
+                    font-size: Fonts.$FontsSize__72px;
+                    font-weight: Fonts.$FontWeight__Bold;
+                    line-height: 76px;
+                }
+                .EventSubTitle{
+                    font-size: Fonts.$FontsSize__20px;
+                    font-weight: Fonts.$FontWeight__SemiBold;
+                    margin-top: 38px;
+                }
+                .EvenetDescriptionOne, .EvenetDescriptionTwo{
+                    line-height: 26px;
+                    color: Colors.$DarkGrey;
+                }
+                .EvenetDescriptionOne{
+                    margin-top: 32px;
+                }
+                .EvenetDescriptionTwo{
+                    margin-top: 16px;
+                }
+            }
+        }
+        .EventImageWrapper{
+            max-width: 570px;
+            margin-left: 100px;
+            .Wrapper{
+                .EventDateWrapper{
+                    position: absolute;
+                    margin-top: -108px;
+                    display: flex;
+                    padding: 16px 24px;
+                    border: 1px Colors.$BlackOverlay solid;
+                    border-bottom-left-radius: 20px;
+                    background-color: Colors.$BlackOverlay;
+                    text-align: center;
+                    .Date, .Hours, .Minutes, .Seconds{
+                        font-weight: Fonts.$FontWeight__Medium;
+                        .Bold{
+                            font-size: Fonts.$FontsSize__36px;
+                            font-weight: Fonts.$FontWeight__Bold;
+                        }
+                    }
+                    .Date, .Hours, .Minutes{
+                        margin-right: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1222px){
+    .EventsSection{
+        .Container{
+            color: Colors.$White;
+            width: 850px;
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            .EventDescriptionWrapper{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 56px;
+                .Wrapper{
+                    .EventTitle{
+                        font-size: Fonts.$FontsSize__72px;
+                        font-weight: Fonts.$FontWeight__Bold;
+                        line-height: 76px;
+                    }
+                    .EventSubTitle{
+                        font-size: Fonts.$FontsSize__20px;
+                        font-weight: Fonts.$FontWeight__SemiBold;
+                        margin-top: 38px;
+                    }
+                    .EvenetDescriptionOne, .EvenetDescriptionTwo{
+                        line-height: 26px;
+                        color: Colors.$DarkGrey;
+                    }
+                    .EvenetDescriptionOne{
+                        margin-top: 32px;
+                        width: 100%;
+                    }
+                    .EvenetDescriptionTwo{
+                        margin-top: 16px;
+                        width: 100%;
+                    }
+                }
+            }
+            .EventImageWrapper{
+                width: 100%;
+                margin-left: 0px;
+                .Wrapper{
+                    .EventImage{
+                        width: 850px;
+                        height: 600px;
+                    }
+                    .EventDateWrapper{
+                        position: absolute;
+                        margin-top: -108px;
+                        display: flex;
+                        padding: 16px 24px;
+                        border: 1px Colors.$BlackOverlay solid;
+                        border-bottom-left-radius: 20px;
+                        background-color: Colors.$BlackOverlay;
+                        text-align: center;
+                        .Date, .Hours, .Minutes, .Seconds{
+                            font-weight: Fonts.$FontWeight__Medium;
+                            .Bold{
+                                font-size: Fonts.$FontsSize__36px;
+                                font-weight: Fonts.$FontWeight__Bold;
+                            }
+                        }
+                        .Date, .Hours, .Minutes{
+                            margin-right: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    .EventsSection{
+        .Container{
+            color: Colors.$White;
+            width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+            .EventDescriptionWrapper{
+                .Wrapper{
+                    .EventTitle{
+                        font-size: Fonts.$FontsSize__52px;
+                    }
+                }
+            }
+            .EventImageWrapper{
+                width: 100%;
+                margin-left: 0px;
+                .Wrapper{
+                    
+                    .EventImage{
+                        width: 700px;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    .EventsSection{
+         .Container{
+            width: 90%;
+            .EventDescriptionWrapper{ 
+                .Wrapper{ 
+                    .EventTitle{
+
+                    }
+                }
+            }
+            .EventImageWrapper{ 
+                margin: auto;
+                .Wrapper{ 
+                    .EventImage{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

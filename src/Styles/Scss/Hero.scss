@@ -1,0 +1,169 @@
+@use "Colors";
+@use "Fonts";
+
+.HeroSection{
+    margin-top: 75px;
+    .Container{
+        max-width: 1083px;
+        margin: auto;
+        color: Colors.$White;
+        //border: 1px red solid;
+        .DecorationWrapper{
+            position: relative;
+            .EllipseLeftImage{
+                position: absolute;
+                top: 300px;
+                left: 100px;
+            }
+            .UnionLeftImage{
+                position: absolute;
+                top: 10px;
+            }
+            .EllipseRightImage{
+                position: absolute;
+                float: right;
+                top: 300px;
+                right: 100px;
+            }
+            .UnionRightImage{
+                position: absolute;
+                float: right;
+                top: 10px;
+                right: 150px;
+            }
+        }
+        .OurDesignEventWrapper{
+            .OurDesignEventSubHeader{
+                text-align: center;
+                font-weight: 500;
+  
+                /* Create the gradient. */
+                background-image: linear-gradient(90deg, rgba(193, 93, 116, 1), rgba(221, 156, 119, 1));
+  
+                /* Set the background size and repeat properties. */
+                background-size: 100%;
+                background-repeat: repeat;
+
+                /* Use the text as a mask for the background. */
+                /* This will show the gradient as a text color rather than element bg. */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+            }
+            .OurDesignEventHeader{
+                font-size: Fonts.$FontsSize__92pxpx;
+                text-align: center;
+                font-weight: Fonts.$FontWeight__ExtraBold;
+                line-height: 106px;
+                margin-top: 6px;
+            }
+            .OurDesignEventCallToActionWrapper{
+                text-align: center;
+                margin-top: 44px;
+                .BookASeatBtn, .LearnMoreBtn{
+                    padding: 20px 40px;
+                    border-radius: 130px;
+                    cursor: pointer;
+                    font-weight: 700;
+                    color: Colors.$White;
+                }
+                .BookASeatBtn{
+                    background-color: Colors.$Blue;
+                }
+                .LearnMoreBtn{
+                    margin-left: 16px;
+                    background-color: Colors.$Transparent;
+                    border: 1px Colors.$ButtonStrokeColor solid;
+                }
+            }
+        }
+    }
+}
+.TeamMembers{
+    margin-top: 58px;
+    .Container{
+        max-width: 1157px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        .TeamMemberOne, .TeamMemberTwo, .TeamMemberThree{
+            width: 334px;
+            height: 464px;
+            color: Colors.$White;
+            .TeamMemberDescription{
+                text-align: center;
+                line-height: 48px;
+                margin-top: -50px;
+                .TeamMemberName{
+                    font-size: Fonts.$FontsSize__52px;
+                    font-weight: Fonts.$FontWeight__ExtraBold;
+                }
+                .TeamMemberPosition{
+                    font-size: Fonts.$FontsSize__20px;
+                    font-weight: Fonts.$FontWeight__SemiBold;
+                    margin-top: 7px;
+                }
+            }
+        }
+        .TeamMemberOne{
+            border: 20px Colors.$LightGreen solid;
+        }
+        .TeamMemberTwo{
+            border: 20px Colors.$Red solid;
+        }
+        .TeamMemberThree{
+            border: 20px Colors.$Yellow solid;
+        }
+    }
+}
+
+@media only screen and (max-width: 1174px){
+    .TeamMembers{
+        margin-top: 58px;
+        .Container{
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+    }
+    .HeroSection{
+        .Container{
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+.TeamMembers{
+    margin-top: 58px;
+    .Container{
+        .TeamMemberOne, .TeamMemberTwo, .TeamMemberThree{
+            padding: 70px;
+            margin: auto;
+        }
+    }
+}
+    .HeroSection{
+        .Container{
+            .OurDesignEventWrapper{
+                .OurDesignEventHeader{
+                    font-size: Fonts.$FontsSize__72px;
+                    text-align: center;
+                    font-weight: Fonts.$FontWeight__ExtraBold;
+                    line-height: 106px;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
