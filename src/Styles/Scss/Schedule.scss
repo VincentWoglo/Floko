@@ -132,7 +132,7 @@
     .ScheduleSection{
         .Container{
             .SchedulesWrapper{
-                width: 770px;
+                width: 100%;
                 margin-left: 50px;
             }
         }
@@ -213,9 +213,48 @@
                 text-align: center;
             }
             .SchedulesWrapper{
-                width: 620px;
+                width: 100%;
                 margin-left: 0px;
                 margin-top: 56px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .ScheduleSection{ 
+        .Container{
+            .SchdeuleTitleWrapper{
+                width: 100%;
+            }
+            .SchedulesWrapper{ 
+                .ScheduleTimeline{
+                    .RegistrationAndCoffee, .PlanAndConductUserResearch,
+                    .QAndAForSpeaker, .LaunchBreak, .ResearchForTheRightThing{
+                        column-gap: 10px;
+                        .Time{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 529px){
+    .ScheduleSection{ 
+        .Container{
+            .SchedulesWrapper{ 
+                .ScheduleTimeline{
+                    .RegistrationAndCoffee, .PlanAndConductUserResearch{
+                        .Circle{
+                            &:before{
+                                height: 129px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

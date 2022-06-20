@@ -105,3 +105,58 @@
         }
     }
 }
+@media only screen and (max-width: 785px){
+    .FooterSection{
+        .Container{ 
+            .Wrapper{
+                .FooterSiteMapWrapper{
+                    flex-wrap: wrap;
+                    gap: 25px;
+                    .FooterNewsletterWrapper {
+                        .FooterNewsletterDescription{
+                            width: 43vw;
+                        }
+                        .FooterNewsletterInputs{
+                            .YourName, .EmailAddress{
+                                width: 39vw;
+                            }
+                            .NewsletterSubscribeBtn{
+                                padding: 14px 13vw;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 676px){
+    .FooterSection{
+        .Container{ 
+            .Wrapper{
+                .FooterSiteMapWrapper{
+                    .FooterNewsletterWrapper {
+                        margin-top: 50px;
+                        .FooterNewsletterDescription{
+                            width: 100%;
+                        }
+                        .FooterNewsletterInputs{
+                            .YourName, .EmailAddress{
+                                width: 100%;
+                            }
+                            .NewsletterSubscribeBtn{
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                width: 100%;
+                                text-align: center;
+                                margin-top: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
