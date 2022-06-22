@@ -22,11 +22,12 @@ const NavBar = ()=>{
                     </div>
                     <div className="LoginRegistrationWrapper">
                         <button className="RegisterNow">Register Now</button>
-                        <div className="HamburgerMenu">
+                        
+                    </div>
+                    <div className="HamburgerMenu">
                             <hr className="Line_1" />
                             <hr className="Line_2" />
                             <hr className="Line_3" />
-                        </div>
                     </div>
                 </div>
             </nav>

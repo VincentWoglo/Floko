@@ -167,3 +167,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 628px){
+    
+    .TeamMembers{
+        margin-top: 58px;
+        .Container{
+            .TeamMemberOne, .TeamMemberTwo, .TeamMemberThree{
+                padding: 0px;
+                margin: auto;
+            }
+        }
+    }
+        .HeroSection{
+            .Container{
+                .OurDesignEventWrapper{
+                    .OurDesignEventHeader{
+                        font-size: Fonts.$FontsSize__72px;
+                        text-align: center;
+                        font-weight: Fonts.$FontWeight__ExtraBold;
+                        line-height: 106px;
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+    }

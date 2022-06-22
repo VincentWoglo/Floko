@@ -129,8 +129,14 @@
     .SpeakersSection{
         .Container{
             .MeetTheSpeakersTitleWrapper{
+                max-width: 90%;
+                width: 90%;
                 .MeetTheSpeakersTitle{
                     font-size: Fonts.$FontsSize__52px;
+                }
+                .MeetTheSpeakersDescription{
+                    width: 100%;
+                    margin: auto;
                 }
             }
         }

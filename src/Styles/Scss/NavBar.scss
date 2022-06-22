@@ -63,7 +63,7 @@
         .Navigation{
             .Container{
                 width: 90%;
-                .MenuListWrapper{
+                .MenuListWrapper, .LoginRegistrationWrapper{
                     display: none;
                 }
                 .HamburgerMenu{
